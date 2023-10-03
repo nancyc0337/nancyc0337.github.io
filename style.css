@@ -37,12 +37,12 @@ a {
 
 .bg-1 {
     background-color: #FF0000; /* Red */
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .bg-2 {
     background-color: #FFA500; /* Orange */
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .card {
@@ -56,7 +56,7 @@ a {
 
 .bg-3 {
     background-color: #fffe7a; /* Light-Yellow */
-    color: #FFFFFF;
+    color: #000000;
     font-weight: bold;
 }
 
