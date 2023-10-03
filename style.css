@@ -36,12 +36,12 @@ a {
 }
 
 .bg-1 {
-    background-color: #ffffff; /* White */
+    background-color: #FF0000; /* Red */
     color: #555555;
 }
 
 .bg-2 {
-    background-color: #90EE90; /* Light-Green */
+    background-color: #90EE90; /* Orange */
     color: #ffffff;
 }
 
@@ -55,8 +55,8 @@ a {
 }
 
 .bg-3 {
-    background-color: #FFA500; /* Orange */
-    color: #ffffff;
+    background-color: #FFA500; /* Yellow */
+    color: #FFFF00;
     font-weight: bold;
 }
 
