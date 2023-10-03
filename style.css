@@ -3,7 +3,8 @@ html, body {
 }
 
 body {
-    font: 25px Comfortaa;
+    font: Comfortaa;
+    font-size: 25px; 
     line-height: 2.0;
     color: #f5f6f7;
 }
