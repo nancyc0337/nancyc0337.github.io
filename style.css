@@ -84,6 +84,7 @@ a {
     color: #2e72a1 !important;
 }
 
-span {
+span1 {
     color: green; 
+    font-weight: bold;
 }
