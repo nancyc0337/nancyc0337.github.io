@@ -58,6 +58,7 @@ a {
     background-color: #ADD8E6; /* Light Blue */
     color: #000000;
     font-weight: bold;
+    font-size: 25px; 
 }
 
 .bg-4 {
@@ -103,5 +104,5 @@ span4 {
 }
 
 span5 {
-    color: #FFFDD0;
+    color: #FCF8E8;
 }
