@@ -79,6 +79,7 @@ a {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    color: #FF00FF;
 }
 
 .navbar-nav li a:hover {
@@ -113,8 +114,4 @@ span6 {
 
 span7 {
     font-size: 28px;
-}
-
-span8 {
-    background-color: #FF00FF;
 }
