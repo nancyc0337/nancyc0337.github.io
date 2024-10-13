@@ -6,7 +6,8 @@ body {
     font: Comfortaa;
     font-size: 25px;
     line-height: 2.0;
-    color: #f5f6f7;
+    color: #FFCCDC;
+    background-color: #FFCCDC;
 }
 
 p {
@@ -48,7 +49,13 @@ a {
 .card {
     color: black;
     text-align: left;
+    flex: 1 0 auto;
 }
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 
 .card-title {
     font-weight: 700;
@@ -62,7 +69,7 @@ a {
 }
 
 .bg-4 {
-    background-color: #343a40; /* Dark Gray */
+    background-color: black; /* Black */
     color: #fff;
 }
 
