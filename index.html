@@ -12,9 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <style>
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
 .carousel-inner {
   padding: 2rem;
   margin: auto;
@@ -42,9 +48,14 @@ img {
 }
 .carousel-indicators li {
     background-color: black;
+    height: 6px;
 }
 .btn-pink {
     background-color: #FF69B4;
+    border-radius: 1rem;
+}
+.btn-yellow {
+  background-color: yellow;
 }
 .center {
     text-align: center;
@@ -53,28 +64,80 @@ img {
   width: 100px;
   height: 50px;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 45px;
+    width: 45px;
+    outline: black;
+    background-color: white;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.col, .col-sm {
+  width: 60%;
+  height: 60%;
+}
+
+.col-md {
+  width: 45%;
+  height: 45%;
+}
+
+.col-lg, .col-xl {
+  width: 60%;
+  height: 60%;
+}
+.br {
+  border-radius: 0.9rem;
+  border: 5px solid #FFD700;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 18px;
+}
+.one {
+  position: relative;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+hr {
+  color: black;
+  border: 1px solid;
+}
+.left {
+  text-align: left;
+}
 </style>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand owner-name" href="#"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark quicksand-font">
+        <a class="navbar-brand owner-name quicksand-font" href="#">Nancy Chen <img src="img/two.png" alt="..." style=" height: 5%; width: 5%; border-radius: 50%;"></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link left" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="me.html">All About Me</a>
+                    <a class="nav-link left" href="me.html">All About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="github" target="_blank">Github</a>
+                    <a class="nav-link left" href="#" id="github" target="_blank">Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link left" href="#projects">Projects</a>
                 </li>
             </ul>
         </div>
@@ -92,7 +155,8 @@ img {
               <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner col col-sm col-md col-lg col-xl">
+              <h3 style="padding-top: 5px; padding-bottom: 5px;">My Logos</h3>
               <div class="carousel-item active">
                 <img src="img/logo1.png" class="d-block w-100" alt="...">
               </div>
@@ -125,7 +189,7 @@ img {
             </a>
           </div>
     </div>
-
+    <hr>
     <!-- Second Container -->
     <div class="container-fluid bg-2 text-center" id="projects">
         <h3 class="margin">Projects</h3>
@@ -137,7 +201,7 @@ img {
                             <h5 class="card-title">Movie Webpage Project</h5>
                             <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
                             <p class="card-text">I apply my knowledge about HTML(HyperText Markup Language) and CSS(Cascading Style Sheets) to make a website about a fictional movie along with my groupmates.</p>
-                            <a href="https://nancyc0337.github.io/movie-webpage.html" class="card-link"><span3>More</span3></a>
+                            <a class="btn btn-yellow br bottom-left" href="movie-webpage.html" role="button" style="font-weight: bold;">More About This Project</a>
                         </div>
                     </div>
                   </div>
@@ -147,9 +211,9 @@ img {
                         <div class="card-body">
                             <h5 class="card-title">CYOA Project</h5>
                             <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text">During this Choose Your Own Adventure Project, we apply our knowledge about command lines, git commands and merging(Automatic Merging & Merge Conflict) to make an adventure project.
+                            <p class="card-text" style="padding-bottom: 15px;">During this Choose Your Own Adventure Project, we apply our knowledge about command lines, git commands and merging(Automatic Merging & Merge Conflict) to make an adventure project.
                             </p>
-                            <a href="https://nancyc0337.github.io/cyoa.html" class="card-link"><span3>More</span3></a>
+                            <a class="btn btn-yellow br bottom-left" href="cyoa.html" role="button" style="font-weight: bold;">More About This Project</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +225,7 @@ img {
                             <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
                             <p class="card-text">During this Freedom Project, we apply our knowledge about HTML, CSS, command lines, bootstrap, bootstrap templates, etc to make a project about a topic that we choose to spread information for others to know.
                             </p>
-                            <a href="https://nancyc0337.github.io/sep10-fp.html" class="card-link"><span3>More</span3></a>
+                            <a class="btn btn-yellow br bottom-left" href="sep10-fp.html" role="button" style="font-weight: bold;">More About This Project</a>
                         </div>
                     </div>
                 </div>
@@ -183,12 +247,12 @@ img {
         </div>
         </a>
     </div>
-
+    <hr>
     <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center one">
         <h3 class="margin">About Me</h3><br>
         <div class="row center">
-            <a class="btn btn-pink" href="me.html" role="button">All About Me</a>
+            <a class="btn btn-pink" href="me.html" role="button" style="border: 5px solid magenta; font-weight: bold; position: absolute; top: 50%; width: 30%; text-align: center; font-size: 20px; color: black; text-decoration: underline;">Click To Know More About Me</a>
         </div>
     </div>
 
