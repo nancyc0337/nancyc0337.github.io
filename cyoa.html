@@ -16,24 +16,65 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-<body id="page-top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Nancy Chen</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html#projects">Projects</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://github.com/nancyc0337">Github</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html#about">All About Me</a></li>
-                </ul>
+    <style>
+        .btn-pink {
+            background-color: white; /* Initial background color */
+            color: black; /* Initial text color */
+            border: 7.5px solid magenta; /* Your desired border */
+            border-radius: 15px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline; /* Your desired text decoration */
+            padding: 15px 30px; /* Add some padding to make it look like a button */
+            display: inline-block; /* Ensure it respects padding/margins */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+        }
+
+        .btn-pink:hover {
+            background-color: #ffc0cb; /* Pink on hover (this is your target color) */
+            color: black; /* White text on hover */
+            border-color: magenta; /* Optional: change border color on hover to match background */
+        }
+
+        .bg-navy {
+            background-color: #000771;
+        }
+
+        .bg-gold {
+            background-color: #ffb900;
+        }
+
+        .lengthone {
+            max-width: 15rem;
+        }
+
+        .lengthtwo {
+            max-width: 10rem;
+        }
+
+        .lengththree {
+            max-width: 15rem;
+        }
+    </style>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-navy text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html#page-top">Nancy Chen</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html#projects">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://github.com/nancyc0337">Github</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html#about">All About Me</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <section class="page-section bg-white text-black mb-0">
     <!-- First Container -->
     <div class="container-fluid bg-1">
