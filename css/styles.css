@@ -167,6 +167,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 abbr[title] {
@@ -186,6 +187,7 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+  font-size: 20px;
 }
 
 ol,
@@ -193,6 +195,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 ol ol,
@@ -246,8 +249,9 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: blue;
   text-decoration: underline;
+  font-size: 20px;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -306,7 +310,7 @@ figure {
 
 img,
 svg {
-  vertical-align: middle;
+  vertical-align: left;
 }
 
 table {
@@ -601,6 +605,8 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-right: auto;
 }
 
 .img-thumbnail {
@@ -10978,7 +10984,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 20rem;
 }
 
 @media (min-width: 992px) {
